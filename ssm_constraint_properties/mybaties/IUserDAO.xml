@@ -1,0 +1,28 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis1.dao.IUserDAO">
+    <!--配置查询所有-->
+    <select id="findAll" resultType="com.mybatis1.pojo.User">
+        select * from usertb;
+    </select>
+
+    <!--保存用户-->
+    <insert id="saveUser" parameterType="com.mybatis1.pojo.User">
+        insert into usertb (user_name,user_pwd) values (#{user_name}, #{user_pwd});
+    </insert>
+
+    <!--更新用户-->
+    <update id="updateUser" parameterType="com.mybatis1.pojo.User">
+        update usertb set user_name=#{user_name}, user_pwd=#{user_pwd} where id=#{id};
+    </update>
+
+    <!--删除用户-->
+    <delete id="deleteUser" parameterType="int">
+        delete from usertb where id = #{uid};
+    </delete>
+
+    <select id="findUserByName" parameterType="string" resultType="com.mybatis1.pojo.User">
+        select * from usertb where user_name like #{value}
+    </select>
+</mapper>

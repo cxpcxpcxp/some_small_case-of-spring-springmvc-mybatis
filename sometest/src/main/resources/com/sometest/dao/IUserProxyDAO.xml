@@ -1,0 +1,36 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sometest.dao.IUserProxyDAO">
+    <!--<resultMap id="userMap" type="user">
+        <id column="id" property="id"/>
+        <result column="user_name" property="username"/>
+        <result column="user_pwd" property="userpwd"/>
+    </resultMap>
+    <select id="findAll" resultMap="userMap">
+        select * from usertb
+    </select>-->
+    <!--<select id="findAll" resultType="com.sometest.pojo.User">-->
+    <select id="findAll" resultType="user">
+        select * from usertb
+    </select>
+
+    <!--<insert id="saveUser" parameterType="com.sometest.pojo.User">-->
+    <insert id="saveUser" parameterType="user">
+        insert into usertb VALUES (null, #{user_name}, #{user_pwd})
+    </insert>
+
+    <!--<update id="updateUser" parameterType="com.sometest.pojo.User">-->
+    <update id="updateUser" parameterType="user">
+        update usertb set user_name = #{user_name}, user_pwd = #{user_pwd} where id = #{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from usertb where id = #{uid}
+    </delete>
+
+    <!--<select id="findUserByName" parameterType="string" resultType="com.sometest.pojo.User">-->
+    <select id="findUserByName" parameterType="string" resultType="user">
+        select * from usertb where user_name like #{value}
+    </select>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--主配置文件-->
+<configuration>
+    <properties resource="jdbc.properties"/>
+    <typeAliases>
+        <package name="com.mybatiesanno.pojo"/>
+        <package name="com.mybatiesanno.dao"/>
+    </typeAliases>
+    <environments default="mysql">
+        <environment id="mysql">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <!--<mapper resource="com/mybatis1/dao/IUserDAO.xml"></mapper>xml配置的映射文件配置-->
+        <!--<mapper class="com.mybatiesanno.dao.IUserDAO"></mapper> 注解的映射文件配置-->
+        <package name="com.mybatiesanno.dao"></package><!--所有此包下的所有类都被关联在这-->
+    </mappers>
+</configuration>

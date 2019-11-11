@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="spring_day01_ioc01:war exploded">
+    <output-path>$PROJECT_DIR$/spring_day01_ioc01/target/spring_day01_ioc01</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="spring_day01_ioc01" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.47" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.1" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.1.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.1.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.1.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.1.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.1.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.1.8.RELEASE" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/spring_day01_ioc01/target/spring_day01_ioc01/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="spring_day01_ioc01/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context:property-placeholder location="jdbc.properties"></context:property-placeholder>
+
+    <bean id="accountDAO" class="com.transaction_xml.dao.impl.AccountDAOImpl">
+        <property name="template" ref="template"></property>
+     </bean>
+
+    <bean id="accountService" class="com.transaction_xml.service.impl.AccountServiceImpl">
+        <property name="accountDAO" ref="accountDAO"></property>
+    </bean>
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${db.driver}"/>
+        <property name="jdbcUrl" value="${db.url}"/>
+        <property name="user" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
+    <bean id="template" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!--配置事务管理器(事务管理器里面需要配置连接,即datasource数据源)-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--声明事务通知类引用事务管理器-->
+    <tx:advice id="transactionInterceptor" transaction-manager="transactionManager">
+        <!--通知类里面配置需要被控制的事务-->
+        <tx:attributes>
+            <tx:method name="*"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!--配置AOP引用事务通知类-->
+    <aop:config>
+        <!--配置统一切点-->
+        <aop:pointcut id="pt" expression="execution(* com.transaction_xml.service..*(..))"></aop:pointcut>
+        <!--配置切面-->
+        <aop:advisor advice-ref="transactionInterceptor" pointcut-ref="pt"></aop:advisor>
+    </aop:config>
+
+
+</beans>

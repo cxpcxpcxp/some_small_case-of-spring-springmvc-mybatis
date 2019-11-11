@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/day01_springmvc_base" />
+    <file type="web" url="file://$PROJECT_DIR$/day02_springmvc_fileload" />
+    <file type="web" url="file://$PROJECT_DIR$/day02_springmvc_param" />
+    <file type="web" url="file://$PROJECT_DIR$/day03_springmvc_zujian" />
+    <file type="web" url="file://$PROJECT_DIR$/day04_SSM" />
+    <file type="web" url="file://$PROJECT_DIR$/mybatiesannotation" />
+    <file type="web" url="file://$PROJECT_DIR$/mybatis_day04_annotation" />
+    <file type="web" url="file://$PROJECT_DIR$/mybatis_day04_pagehelper" />
+    <file type="web" url="file://$PROJECT_DIR$/mybatis_dynamic_select" />
+    <file type="web" url="file://$PROJECT_DIR$/mybatis_lazyload" />
+    <file type="web" url="file://$PROJECT_DIR$/mybatis_more2more" />
+    <file type="web" url="file://$PROJECT_DIR$/mybatis_more2noe" />
+    <file type="web" url="file://$PROJECT_DIR$/mybatis_one2more" />
+    <file type="web" url="file://$PROJECT_DIR$/mybatis_one2one" />
+    <file type="web" url="file://$PROJECT_DIR$/mybatispro" />
+    <file type="web" url="file://$PROJECT_DIR$/sometest" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_aop_annotation_day01" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_aop_proxy_day01" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_aop_xml_da01" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_day01_ioc01" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_day02_ioc_allAnnotation" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_day02_ioc_annotation" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_day02_ioc_xml" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_di_constructor" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_di_list" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_di_setmethod" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_ioc_annotation_test" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_transaction_annotation_day02" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_transaction_xml_day02" />
+    <file type="web" url="file://$PROJECT_DIR$/springaop" />
+    <file type="web" url="file://$PROJECT_DIR$/springioc2" />
+    <file type="web" url="file://$PROJECT_DIR$/springitroduction" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc_base" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/mybatispro/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatiesannotation/pom.xml" />
+        <option value="$PROJECT_DIR$/sometest/pom.xml" />
+        <option value="$PROJECT_DIR$/springitroduction/pom.xml" />
+        <option value="$PROJECT_DIR$/springaop/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_one2one/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_one2more/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_more2more/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_dynamic_select/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_more2noe/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_lazyload/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_day04_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_day04_pagehelper/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day01_ioc01/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_ioc_annotation_test/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_di_constructor/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_di_setmethod/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_di_list/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day02_ioc_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day02_ioc_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc_base/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_aop_proxy_day01/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_aop_xml_da01/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_aop_annotation_day01/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_transaction_xml_day02/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_transaction_annotation_day02/pom.xml" />
+        <option value="$PROJECT_DIR$/day01_springmvc_base/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_springmvc_param/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_springmvc_fileload/pom.xml" />
+        <option value="$PROJECT_DIR$/day03_springmvc_zujian/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_SSM/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

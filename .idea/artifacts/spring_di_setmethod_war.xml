@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring_di_setmethod:war">
+    <output-path>$PROJECT_DIR$/spring_di_setmethod/target</output-path>
+    <root id="archive" name="spring_di_setmethod.war">
+      <element id="artifact" artifact-name="spring_di_setmethod:war exploded" />
+    </root>
+  </artifact>
+</component>

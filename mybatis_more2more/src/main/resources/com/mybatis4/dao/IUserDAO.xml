@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis4.dao.IUserDAO">
+    <resultMap id="UserRoleMap" type="User">
+        <id column="id" property="id"/>
+        <result column="user_name" property="user_name"/>
+        <result column="user_pwd" property="user_pwd"/>
+        <collection property="roleList" javaType="java.util.List" ofType="Role">
+            <id column="urid" property="id"/>
+            <result column="uid" property="uid"/>
+            <result column="rid" property="rid"/>
+            <result column="rolename" property="rolename"/>
+        </collection>
+    </resultMap>
+    <select id="findAll" resultMap="UserRoleMap">
+      select usertb.* ,u.id urid,u.uid,u.rid,r.id rrid,r.rolename from usertb
+      left join usertbrole u on usertb.id = u.uid
+      left join roletb r on u.rid = r.id
+    </select>
+</mapper>

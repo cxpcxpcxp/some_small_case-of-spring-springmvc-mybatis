@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mybatis_lazyload:war">
+    <output-path>$PROJECT_DIR$/mybatis_lazyload/target</output-path>
+    <root id="archive" name="mybatis_lazyload.war">
+      <element id="artifact" artifact-name="mybatis_lazyload:war exploded" />
+    </root>
+  </artifact>
+</component>

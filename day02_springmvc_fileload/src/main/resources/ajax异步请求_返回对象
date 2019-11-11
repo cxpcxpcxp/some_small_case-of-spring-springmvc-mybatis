@@ -1,0 +1,7 @@
+一、接收对象数据，响应json数据
+1、导入jackson
+2、导入jquery.min.js（注意不能放在WEB-INF文件夹下，访问不到）
+3、在springmvc中配置让其静态资源过滤<mvc:resources mapping="/js/**" location="/js/"/>
+4、jsp页面中添加点击按钮，并且添加点击事件
+5、接收对象数据，响应json数据，不需要使用@RequestBody注解，响应数据需要用到@ResponseBody注解
+二、接收对象以及集合数据，响应json数据

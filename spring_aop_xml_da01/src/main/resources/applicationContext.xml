@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="accountService" class="com.aop.service.impl.AccountServiceImpl"></bean>
+    <!--配置通知类-->
+    <bean id="log" class="com.aop.log.MyLog"></bean>
+
+    <!--自动代理-->
+    <aop:config>
+        <!--配置全局切点-->
+        <aop:pointcut id="pt" expression="execution(* com.aop.service..*(..))"></aop:pointcut>
+        <!--配置切点引用通知类-->
+        <aop:aspect ref="log">
+            <aop:before method="beforeLog" pointcut-ref="pt"></aop:before>
+            <aop:after-returning method="afterReturn" pointcut-ref="pt"></aop:after-returning>
+            <aop:after-throwing method="afterThrow" pointcut-ref="pt"></aop:after-throwing>
+            <aop:after method="after" pointcut-ref="pt"></aop:after>
+        </aop:aspect>
+    </aop:config>
+</beans>

@@ -1,0 +1,24 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spring.dao.IUserDAO">
+    <select id="findAll" resultType="com.spring.pojo.User">
+        select * from usertb
+    </select>
+
+    <insert id="saveUser" parameterType="user">
+        insert into usertb VALUES (null, #{user_name}, #{user_pwd})
+    </insert>
+
+    <update id="updateUser" parameterType="user">
+        update usertb set user_name = #{user_name}, user_pwd = #{user_pwd} where id = #{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from usertb where id = #{uid}
+    </delete>
+
+    <select id="findUserByName" parameterType="string" resultType="com.spring.pojo.User">
+        select * from usertb where user_name like #{value}
+    </select>
+</mapper>

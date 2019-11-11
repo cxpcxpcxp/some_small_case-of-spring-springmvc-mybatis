@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="day01_springmvc_base" />
+        <module name="day02_springmvc_fileload" />
+        <module name="day02_springmvc_param" />
+        <module name="day03_springmvc_zujian" />
+        <module name="day04_SSM" />
+        <module name="mybatiesannotation" />
+        <module name="mybatis_day04_annotation" />
+        <module name="mybatis_day04_pagehelper" />
+        <module name="mybatis_dynamic_select" />
+        <module name="mybatis_lazyload" />
+        <module name="mybatis_more2more" />
+        <module name="mybatis_more2noe" />
+        <module name="mybatis_one2more" />
+        <module name="mybatis_one2one" />
+        <module name="mybatispro" />
+        <module name="sometest" />
+        <module name="spring_aop_annotation_day01" />
+        <module name="spring_aop_proxy_day01" />
+        <module name="spring_aop_xml_da01" />
+        <module name="spring_day01_ioc01" />
+        <module name="spring_day02_ioc_annotation" />
+        <module name="spring_day02_ioc_xml" />
+        <module name="spring_di_constructor" />
+        <module name="spring_di_list" />
+        <module name="spring_di_setmethod" />
+        <module name="spring_ioc_annotation_test" />
+        <module name="spring_transaction_annotation_day02" />
+        <module name="spring_transaction_xml_day02" />
+        <module name="springaop" />
+        <module name="springitroduction" />
+        <module name="springmvc_base" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="day01_springmvc_base" target="1.7" />
+      <module name="day02_springmvc_fileload" target="1.7" />
+      <module name="day02_springmvc_param" target="1.7" />
+      <module name="day03_springmvc_zujian" target="1.7" />
+      <module name="day04_SSM" target="1.7" />
+      <module name="mybatiesannotation" target="1.7" />
+      <module name="mybatis_day04_annotation" target="1.7" />
+      <module name="mybatis_day04_pagehelper" target="1.7" />
+      <module name="mybatis_dynamic_select" target="1.7" />
+      <module name="mybatis_lazyload" target="1.7" />
+      <module name="mybatis_more2more" target="1.7" />
+      <module name="mybatis_more2noe" target="1.7" />
+      <module name="mybatis_one2more" target="1.7" />
+      <module name="mybatis_one2one" target="1.7" />
+      <module name="mybatispro" target="1.7" />
+      <module name="sometest" target="1.7" />
+      <module name="spring_aop_annotation_day01" target="1.7" />
+      <module name="spring_aop_proxy_day01" target="1.7" />
+      <module name="spring_aop_xml_da01" target="1.7" />
+      <module name="spring_day01_ioc01" target="1.7" />
+      <module name="spring_day02_ioc_allAnnotation" target="1.7" />
+      <module name="spring_day02_ioc_annotation" target="1.7" />
+      <module name="spring_day02_ioc_xml" target="1.7" />
+      <module name="spring_di_constructor" target="1.7" />
+      <module name="spring_di_list" target="1.7" />
+      <module name="spring_di_setmethod" target="1.7" />
+      <module name="spring_ioc_annotation_test" target="1.7" />
+      <module name="spring_transaction_annotation_day02" target="1.7" />
+      <module name="spring_transaction_xml_day02" target="1.7" />
+      <module name="springaop" target="1.7" />
+      <module name="springioc2" target="1.7" />
+      <module name="springitroduction" target="1.7" />
+      <module name="springmvc_base" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

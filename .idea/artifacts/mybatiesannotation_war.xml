@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mybatiesannotation:war">
+    <output-path>$PROJECT_DIR$/mybatiesannotation/target</output-path>
+    <root id="archive" name="mybatiesannotation.war">
+      <element id="artifact" artifact-name="mybatiesannotation:war exploded" />
+    </root>
+  </artifact>
+</component>

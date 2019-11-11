@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring_day02_ioc_xml:war">
+    <output-path>$PROJECT_DIR$/spring_day02_ioc_xml/target</output-path>
+    <root id="archive" name="spring_day02_ioc_xml.war">
+      <element id="artifact" artifact-name="spring_day02_ioc_xml:war exploded" />
+    </root>
+  </artifact>
+</component>

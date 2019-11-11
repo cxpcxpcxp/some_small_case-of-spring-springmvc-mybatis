@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="jdbc.properties"/>
+    <typeAliases>
+        <package name="com.spring.pojo"/>
+        <package name="com.spring.dao"/>
+    </typeAliases>
+    <environments default="mysql">
+        <environment id="mysql">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!--<mapper resource="IUserDAO.xml"></mapper>-->
+        <!--//一定要注意这里在resources包下创建的时候是创建文件夹不-->
+        <mapper resource="com/spring/dao/IUserDAO.xml"></mapper>
+        <!--<package name="com.spring.dao"/>-->
+    </mappers>
+</configuration>

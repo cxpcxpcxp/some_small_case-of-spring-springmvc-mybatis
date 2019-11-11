@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--有参构造 注入-->
+    <!--<bean id="userService" class="UserServiceImpl">
+        <constructor-arg name="id" value="1"></constructor-arg>
+        <constructor-arg name="user_name" value="构造注入"></constructor-arg>
+        <constructor-arg name="user_pwd" value="123"></constructor-arg>
+        <constructor-arg name="date" ref="date"></constructor-arg>
+    </bean>
+    <bean id="date" class="java.util.Date"></bean>-->
+
+    <!--set方法 注入-->
+    <!--<bean id="userService" class="com.springlistid.service.impl.UserServiceImpl">
+        <property name="id" value="01"></property>
+        <property name="user_name" value="方法依赖"></property>
+        <property name="user_pwd" value="123"></property>
+        <property name="date" ref="now"></property>
+    </bean>
+    <bean id="now" class="java.util.Date"></bean>-->
+
+    <!--list集合 注入-->
+    <bean id="userService" class="com.springlistid.service.impl.UserServiceImpl">
+        <property name="myarr">
+            <array>
+                <value>arrAA</value>
+                <value>arrBB</value>
+                <value>arrCC</value>
+            </array>
+        </property>
+        <property name="mylist">
+            <list>
+                <value>listAA</value>
+                <value>listBB</value>
+                <value>listCC</value>
+            </list>
+        </property>
+        <property name="myset">
+            <set>
+                <value>setAA</value>
+                <value>setBB</value>
+                <value>setCC</value>
+            </set>
+        </property>
+        <property name="mymap">
+            <map>
+                <entry key="map1" value="AA"></entry>
+                <entry key="map2" value="BB"></entry>
+                <entry key="map3" value="CC"></entry>
+            </map>
+        </property>
+        <property name="myproper">
+            <props>
+                <prop key="proper1">properAA</prop>
+                <prop key="proper2">properBB</prop>
+                <prop key="proper3">properCC</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="userService" class="com.springconstructordi.service.impl.UserServiceImpl">
+        <constructor-arg name="id" value="1"></constructor-arg>
+        <constructor-arg name="user_name" value="构造注入"></constructor-arg>
+        <constructor-arg name="user_pwd" value="123"></constructor-arg>
+        <constructor-arg name="date" ref="date"></constructor-arg>
+    </bean>
+
+    <bean id="date" class="java.util.Date"></bean>
+</beans>

@@ -1,0 +1,6 @@
+1、字符串转日期类型===》String==>Date
+implements Convert<>
+xml ConversionServiceFactoryBean
+annotation-driver里面需要引入conversion-service
+
+2、异常处理
